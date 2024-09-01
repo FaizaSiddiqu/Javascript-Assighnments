@@ -84,14 +84,14 @@ var obtainedMarks1 = parseFloat(prompt("Enter the obtained marks for" , subject1
 var obtainedMarks2 = parseFloat(prompt("Enter the obtained marks for" , subject2 , ":"));
 var obtainedMarks3 = parseFloat(prompt("Enter the obtained marks for" , subject3 , ":"));
 
-let totalObtainedMarks = marks1 + marks2 + marks3;
-let totalMarks = totalMarksPerSubject * 3; // Total 300 marks hain (100 each subject)
+let totalObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3;
+let totalMarks = totalMarksEachSubject * 3; // Total 300 marks hain (100 each subject)
 let percentage = (totalObtainedMarks / totalMarks) * 100;
 
 document.write("<h2>Marks Sheet</h2>");
-document.write(subject1 + ": " + marks1 + " out of " + totalMarksPerSubject + "<br>");
-document.write(subject2 + ": " + marks2 + " out of " + totalMarksPerSubject + "<br>");
-document.write(subject3 + ": " + marks3 + " out of " + totalMarksPerSubject + "<br>");
+document.write(subject1 + ": " + obtainedMarks1 + " out of " + totalMarksEachSubject + "<br>");
+document.write(subject2 + ": " + obtainedMarks2 + " out of " + totalMarksEachSubject + "<br>");
+document.write(subject3 + ": " + obtainedMarks3 + " out of " + totalMarksEachSubject + "<br>");
 document.write("Total Marks: " + totalMarks + "<br>");
 document.write("Marks Obtained: " + totalObtainedMarks + "<br>");
 document.write("Percentage: " + percentage.toFixed(2) + "%<br>");
